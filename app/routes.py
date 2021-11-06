@@ -15,9 +15,6 @@ def before_request():
         db.session.commit()
 
 @app.route('/')
-def home():
-    return render_template('base.html', title='Welcome')
-
 @app.route('/index', methods=['GET', 'POST'])
 @login_required
 def index():
