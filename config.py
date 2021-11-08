@@ -17,3 +17,5 @@ class Config():
     ADMINS = ['noreply.testformicroblog@gmail.com']
     # Posts Per Page
     POSTS_PER_PAGE = 20
+    # Languages
+    LANGUAGES = ['en', 'zh_cn']
