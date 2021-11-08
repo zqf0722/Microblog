@@ -131,3 +131,4 @@ dmypy.json
 # Database, Database Migration
 *.db
 microblog.log*
+*.env

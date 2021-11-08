@@ -1,7 +1,10 @@
 import os
+from dotenv import load_dotenv
 basedir = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(basedir, '.env'))
 
-class Config():
+
+class Config(object):
     # Safety
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'serenejoker'
     # SQLite Database Directory
@@ -19,4 +22,5 @@ class Config():
     POSTS_PER_PAGE = 20
     # Languages
     LANGUAGES = ['en', 'zh_cn']
+    # Translator
     MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
