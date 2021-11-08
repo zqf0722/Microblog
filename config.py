@@ -24,3 +24,5 @@ class Config(object):
     LANGUAGES = ['en', 'zh_cn']
     # Translator
     MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
+    # Search
+    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
