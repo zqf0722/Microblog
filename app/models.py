@@ -100,6 +100,8 @@ class User(UserMixin, db.Model):
             followers.c.followed_id == user.id).count() > 0
 
     def followed_posts(self):
+        if not Post.query.all():
+            return None
         followed = Post.query.join(
             followers, (followers.c.followed_id == Post.user_id)).filter(
                 followers.c.follower_id == self.id)
@@ -132,7 +134,7 @@ class Post(SearchableMixin, db.Model):
     body = db.Column(db.String(140))
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    language = db.Column(db.String(5), default='zh_cn')
+    language = db.Column(db.String(5))
 
     def __repr__(self):
         return '<Post {}>'.format(self.body)

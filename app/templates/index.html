@@ -7,9 +7,11 @@
     {{ wtf.quick_form(form) }}
     <br>
     {% endif %}
-    {% for post in posts %}
-        {% include '_post.html' %}
-    {% endfor %}
+    {% if post %}
+        {% for post in posts %}
+            {% include '_post.html' %}
+        {% endfor %}
+    {% endif %}
     <nav aria-label="...">
         <ul class="pager">
             <li class="previous{% if not prev_url %} disabled{% endif %}">
