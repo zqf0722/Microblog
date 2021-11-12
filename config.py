@@ -8,7 +8,7 @@ class Config(object):
     # Safety
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'serenejoker'
     # SQLite Database Directory
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL', '').replace('postgres://', 'postgresql://') or \
                               'sqlite:///' + os.path.join(basedir, 'app.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     # For Email Error Handling
@@ -26,3 +26,5 @@ class Config(object):
     MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
     # Search
     ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
+    # Log
+    LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
