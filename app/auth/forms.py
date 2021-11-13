@@ -29,7 +29,7 @@ class RegistrationForm(FlaskForm):
     email = StringField(_l('Email'), validators=[DataRequired(), Email()])
     password = PasswordField(_l('Password'), validators=[DataRequired()])
     password2 = PasswordField(
-        _l('Repeat Password'), validators=[DataRequired()])
+        _l('Repeat Password'), validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField(_l('Register'))
 
 
@@ -43,12 +43,3 @@ class RegistrationForm(FlaskForm):
         email = User.query.filter_by(email=email.data).first()
         if email:
             raise ValidationError(_('The email address was already registered. Choose another one or login with it.'))
-
-
-    def validate_password(self, password):
-        self.password = password
-
-
-    def validate_password2(self, password2):
-        if password2 != self.password:
-            raise ValidationError(_('The two passwords must match!'))
