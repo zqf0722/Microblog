@@ -1,8 +1,8 @@
-"""new
+"""userpost
 
-Revision ID: 2c43bbeab541
+Revision ID: 1e44837d2c77
 Revises: 
-Create Date: 2021-11-12 18:24:57.793091
+Create Date: 2021-11-12 23:12:03.696817
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '2c43bbeab541'
+revision = '1e44837d2c77'
 down_revision = None
 branch_labels = None
 depends_on = None
