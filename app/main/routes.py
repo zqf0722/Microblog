@@ -24,6 +24,7 @@ def before_request():
 @bp.route('/index', methods=['GET', 'POST'])
 @login_required
 def index():
+    Post.reindex()
     form = PostForm()
     if form.validate_on_submit():
         try:

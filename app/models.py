@@ -49,7 +49,6 @@ class SearchableMixin(object):
 
 
 db.event.listen(db.session, 'before_commit', SearchableMixin.before_commit)
-db.event.listen(db.session, 'before_commit', SearchableMixin.reindex())
 db.event.listen(db.session, 'after_commit', SearchableMixin.after_commit)
 
 
