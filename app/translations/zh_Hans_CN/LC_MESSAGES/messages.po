@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-11-13 03:23-0500\n"
+"POT-Creation-Date: 2021-11-17 22:36-0500\n"
 "PO-Revision-Date: 2021-11-13 01:54-0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans_CN\n"
@@ -75,10 +75,6 @@ msgid ""
 "The email address was already registered. Choose another one or login "
 "with it."
 msgstr "这个邮箱已被使用，请使用一个新的"
-
-#: app/auth/forms.py:54
-msgid "The two passwords must match!"
-msgstr "两次输入的密码必须相同"
 
 #: app/auth/routes.py:20
 msgid "Invalid username or password"
@@ -169,11 +165,12 @@ msgstr "您不再关注%(username)s!"
 msgid "Your changes have been saved."
 msgstr "您的改动已保存。"
 
-#: app/templates/_post.html:12
-msgid "said"
-msgstr "说"
+#: app/templates/_post.html:16
+#, python-format
+msgid "%(username)s said %(when)s"
+msgstr "%(username)s %(when)s说"
 
-#: app/templates/_post.html:22
+#: app/templates/_post.html:27
 msgid "Translate"
 msgstr "翻译"
 
@@ -243,16 +240,16 @@ msgstr "更近的结果"
 msgid "User"
 msgstr "用户"
 
-#: app/templates/user.html:11
+#: app/templates/user.html:11 app/templates/user_popup.html:11
 msgid "Last seen on"
 msgstr "上次登录"
 
-#: app/templates/user.html:14
+#: app/templates/user.html:14 app/templates/user_popup.html:14
 #, python-format
 msgid "%(count)d followers"
 msgstr "%(count)d 粉丝"
 
-#: app/templates/user.html:14
+#: app/templates/user.html:14 app/templates/user_popup.html:15
 #, python-format
 msgid "%(count)d following"
 msgstr "%(count)d 关注"
@@ -261,12 +258,17 @@ msgstr "%(count)d 关注"
 msgid "Edit your profile"
 msgstr "修改您的个人档案"
 
-#: app/templates/user.html:22
+#: app/templates/user.html:22 app/templates/user_popup.html:23
 msgid "Follow"
 msgstr "关注"
 
 #: app/templates/user.html:29
 msgid "UnFollow"
+msgstr "取消关注"
+
+#: app/templates/user_popup.html:32
+#, fuzzy
+msgid "Unfollow"
 msgstr "取消关注"
 
 #: app/templates/auth/login.html:12
@@ -308,4 +310,10 @@ msgstr "一个未意料的错误出现"
 #: app/templates/errors/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "管理员已被通知。对您造成的不便感到抱歉！"
+
+#~ msgid "The two passwords must match!"
+#~ msgstr "两次输入的密码必须相同"
+
+#~ msgid "said"
+#~ msgstr "说"
 
