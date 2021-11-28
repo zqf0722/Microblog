@@ -2,9 +2,16 @@
 
 {% block app_content %}
     <h1>{{ _('Messages') }}</h1>
-    {% for post in messages %}
-        {% include '_post.html' %}
-    {% endfor %}
+    {% if messages %}
+        {% for post in messages %}
+            {% include '_post.html' %}
+        {% endfor %}
+    {% else %}
+        <div align="center">
+            <font size="6"> <h2>{{ _('Nothing here!') }}</h2> </font>
+            <font size="5"><a href="url_for('main.index')"> {{ _('Return to the main page') }} </a></font>
+        </div>
+    {% endif %}
     <nav aria-label="...">
         <ul class="pager">
             <li class="previous{% if not prev_url %} disabled{% endif %}">
