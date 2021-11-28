@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-11-27 23:33-0500\n"
+"POT-Creation-Date: 2021-11-28 01:09-0500\n"
 "PO-Revision-Date: 2021-11-13 01:54-0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans_CN\n"
@@ -169,12 +169,12 @@ msgstr "您不再关注%(username)s!"
 msgid "Your changes have been saved."
 msgstr "您的改动已保存。"
 
-#: app/main/routes.py:177
+#: app/main/routes.py:178
 #, fuzzy
 msgid "Your message has been sent."
 msgstr "您的密码已重置"
 
-#: app/main/routes.py:179
+#: app/main/routes.py:180
 msgid "Send Message"
 msgstr "发送私信"
 
@@ -207,15 +207,19 @@ msgstr "发现"
 msgid "Login"
 msgstr "登录"
 
-#: app/templates/base.html:43
+#: app/templates/base.html:45 app/templates/messages.html:4
+msgid "Messages"
+msgstr "私信"
+
+#: app/templates/base.html:54
 msgid "Profile"
 msgstr "个人档案"
 
-#: app/templates/base.html:44
+#: app/templates/base.html:55
 msgid "Logout"
 msgstr "登出"
 
-#: app/templates/base.html:82
+#: app/templates/base.html:93
 msgid "Error: Could not contact server."
 msgstr "错误：无法连接到服务器"
 
@@ -229,23 +233,29 @@ msgstr "修改您的个人档案"
 msgid "Hi, %(username)s!"
 msgstr "您好，%(username)s"
 
-#: app/templates/index.html:19 app/templates/user.html:51
+#: app/templates/index.html:16 app/templates/messages.html:11
+#: app/templates/user.html:50
+msgid "Nothing here!"
+msgstr "这里空空如也！"
+
+#: app/templates/index.html:17 app/templates/messages.html:12
+#: app/templates/user.html:51
+msgid "Return to the main page"
+msgstr "返回主页"
+
+#: app/templates/index.html:24 app/templates/user.html:58
 msgid "Newer posts"
 msgstr "更近的微博"
 
-#: app/templates/index.html:24 app/templates/user.html:56
+#: app/templates/index.html:29 app/templates/user.html:63
 msgid "Older posts"
 msgstr "更旧的微博"
 
-#: app/templates/messages.html:4
-msgid "Messages"
-msgstr "私信"
-
-#: app/templates/messages.html:12
+#: app/templates/messages.html:19
 msgid "Newer messages"
 msgstr "上一页私信"
 
-#: app/templates/messages.html:17
+#: app/templates/messages.html:24
 msgid "Older messages"
 msgstr "下一页私信"
 
@@ -292,13 +302,13 @@ msgstr "修改您的个人档案"
 msgid "Follow"
 msgstr "关注"
 
-#: app/templates/user.html:30
-msgid "Send private message"
-msgstr "发送私信"
-
-#: app/templates/user.html:37
+#: app/templates/user.html:29
 msgid "UnFollow"
 msgstr "取消关注"
+
+#: app/templates/user.html:37
+msgid "Send private message"
+msgstr "发送私信"
 
 #: app/templates/user_popup.html:32
 #, fuzzy
@@ -329,19 +339,19 @@ msgstr "重置您的密码"
 msgid "Reset Password"
 msgstr "重置密码"
 
-#: app/templates/errors/404.html:4
+#: app/templates/errors/404.html:5
 msgid "Not Found"
 msgstr "未找到"
 
-#: app/templates/errors/404.html:5 app/templates/errors/500.html:6
+#: app/templates/errors/404.html:6 app/templates/errors/500.html:7
 msgid "Back"
 msgstr "返回"
 
-#: app/templates/errors/500.html:4
+#: app/templates/errors/500.html:5
 msgid "An unexpected error has occurred"
 msgstr "一个未意料的错误出现"
 
-#: app/templates/errors/500.html:5
+#: app/templates/errors/500.html:6
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "管理员已被通知。对您造成的不便感到抱歉！"
 

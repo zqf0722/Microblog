@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block app_content %}
-    <h1>{{ _('Not Found') }}</h1>
-    <p><a href="{{ url_for('index') }}">{{ _('Back') }}</a></p>
+    <div align="center">
+        <h1>{{ _('Not Found') }}</h1>
+        <font size="4"><p><a href="{{ url_for('main.index') }}">{{ _('Back') }}</a></p></font>
+    </div>
 {% endblock %}
