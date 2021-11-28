@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-11-17 22:36-0500\n"
+"POT-Creation-Date: 2021-11-27 23:33-0500\n"
 "PO-Revision-Date: 2021-11-13 01:54-0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans_CN\n"
@@ -114,7 +114,7 @@ msgstr "您的密码已重置"
 msgid "About me"
 msgstr "关于我"
 
-#: app/main/forms.py:12 app/main/forms.py:32
+#: app/main/forms.py:12 app/main/forms.py:32 app/main/forms.py:50
 msgid "Submit"
 msgstr "提交"
 
@@ -133,6 +133,10 @@ msgstr "搜索微博"
 #: app/main/forms.py:37
 msgid "Go"
 msgstr "出发"
+
+#: app/main/forms.py:48
+msgid "Message"
+msgstr "私信"
 
 #: app/main/routes.py:37
 msgid "Your post is now live!"
@@ -164,6 +168,15 @@ msgstr "您不再关注%(username)s!"
 #: app/main/routes.py:112
 msgid "Your changes have been saved."
 msgstr "您的改动已保存。"
+
+#: app/main/routes.py:177
+#, fuzzy
+msgid "Your message has been sent."
+msgstr "您的密码已重置"
+
+#: app/main/routes.py:179
+msgid "Send Message"
+msgstr "发送私信"
 
 #: app/templates/_post.html:16
 #, python-format
@@ -216,13 +229,25 @@ msgstr "修改您的个人档案"
 msgid "Hi, %(username)s!"
 msgstr "您好，%(username)s"
 
-#: app/templates/index.html:19 app/templates/user.html:43
+#: app/templates/index.html:19 app/templates/user.html:51
 msgid "Newer posts"
 msgstr "更近的微博"
 
-#: app/templates/index.html:24 app/templates/user.html:48
+#: app/templates/index.html:24 app/templates/user.html:56
 msgid "Older posts"
 msgstr "更旧的微博"
+
+#: app/templates/messages.html:4
+msgid "Messages"
+msgstr "私信"
+
+#: app/templates/messages.html:12
+msgid "Newer messages"
+msgstr "上一页私信"
+
+#: app/templates/messages.html:17
+msgid "Older messages"
+msgstr "下一页私信"
 
 #: app/templates/search.html:4
 msgid "Search Results"
@@ -235,6 +260,11 @@ msgstr "更早的结果"
 #: app/templates/search.html:18
 msgid "Next results"
 msgstr "更近的结果"
+
+#: app/templates/send_message.html:5
+#, python-format
+msgid "Send Message to %(recipient)s"
+msgstr "发送私信给%(recipient)s"
 
 #: app/templates/user.html:8
 msgid "User"
@@ -262,7 +292,11 @@ msgstr "修改您的个人档案"
 msgid "Follow"
 msgstr "关注"
 
-#: app/templates/user.html:29
+#: app/templates/user.html:30
+msgid "Send private message"
+msgstr "发送私信"
+
+#: app/templates/user.html:37
 msgid "UnFollow"
 msgstr "取消关注"
 
