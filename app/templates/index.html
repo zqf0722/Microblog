@@ -2,10 +2,14 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block app_content %}
-    <h1>{{ _('Hi, %(username)s!', username=current_user.username) }}</h1>
+    {% if not notlogin %}
+        <h1>{{ _('Hi, %(username)s!', username=current_user.username) }}</h1>
+    {% else %}
+        <h1>{{ _('Log in to post your feelings and share with others!') }}</h1>
+    {% endif %}
     {% if form %}
-    {{ wtf.quick_form(form) }}
-    <br>
+        {{ wtf.quick_form(form) }}
+        <br>
     {% endif %}
     {% if posts %}
         {% for post in posts %}

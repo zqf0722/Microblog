@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-11-28 01:09-0500\n"
+"POT-Creation-Date: 2021-12-05 18:14-0500\n"
 "PO-Revision-Date: 2021-11-13 01:54-0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans_CN\n"
@@ -142,39 +142,39 @@ msgstr "私信"
 msgid "Your post is now live!"
 msgstr "您已发出了这篇微博"
 
-#: app/main/routes.py:55 app/main/routes.py:75
+#: app/main/routes.py:58 app/main/routes.py:78
 #, python-format
 msgid "User %(username)s not found."
 msgstr "用户%(username)s未找到"
 
-#: app/main/routes.py:58
+#: app/main/routes.py:61
 msgid "You cannot follow yourself!"
 msgstr "您不能关注自己"
 
-#: app/main/routes.py:62
+#: app/main/routes.py:65
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "您目前在关注%(username)s！"
 
-#: app/main/routes.py:78
+#: app/main/routes.py:81
 msgid "You cannot unfollow yourself!"
 msgstr "你不能关注您自己"
 
-#: app/main/routes.py:82
+#: app/main/routes.py:85
 #, python-format
 msgid "You stop following %(username)s!"
 msgstr "您不再关注%(username)s!"
 
-#: app/main/routes.py:112
+#: app/main/routes.py:115
 msgid "Your changes have been saved."
 msgstr "您的改动已保存。"
 
-#: app/main/routes.py:178
+#: app/main/routes.py:181
 #, fuzzy
 msgid "Your message has been sent."
 msgstr "您的密码已重置"
 
-#: app/main/routes.py:180
+#: app/main/routes.py:183
 msgid "Send Message"
 msgstr "发送私信"
 
@@ -228,26 +228,30 @@ msgstr "错误：无法连接到服务器"
 msgid "Edit Profile"
 msgstr "修改您的个人档案"
 
-#: app/templates/index.html:5
+#: app/templates/index.html:6
 #, python-format
 msgid "Hi, %(username)s!"
 msgstr "您好，%(username)s"
 
-#: app/templates/index.html:16 app/templates/messages.html:11
+#: app/templates/index.html:8
+msgid "Log in to post your feelings and share with others!"
+msgstr "登录来说点什么和大家分享吧"
+
+#: app/templates/index.html:20 app/templates/messages.html:11
 #: app/templates/user.html:50
 msgid "Nothing here!"
 msgstr "这里空空如也！"
 
-#: app/templates/index.html:17 app/templates/messages.html:12
+#: app/templates/index.html:21 app/templates/messages.html:12
 #: app/templates/user.html:51
 msgid "Return to the main page"
 msgstr "返回主页"
 
-#: app/templates/index.html:24 app/templates/user.html:58
+#: app/templates/index.html:28 app/templates/user.html:58
 msgid "Newer posts"
 msgstr "更近的微博"
 
-#: app/templates/index.html:29 app/templates/user.html:63
+#: app/templates/index.html:33 app/templates/user.html:63
 msgid "Older posts"
 msgstr "更旧的微博"
 
@@ -298,7 +302,7 @@ msgstr "%(count)d 关注"
 msgid "Edit your profile"
 msgstr "修改您的个人档案"
 
-#: app/templates/user.html:22 app/templates/user_popup.html:23
+#: app/templates/user.html:22
 msgid "Follow"
 msgstr "关注"
 
@@ -309,11 +313,6 @@ msgstr "取消关注"
 #: app/templates/user.html:37
 msgid "Send private message"
 msgstr "发送私信"
-
-#: app/templates/user_popup.html:32
-#, fuzzy
-msgid "Unfollow"
-msgstr "取消关注"
 
 #: app/templates/auth/login.html:12
 msgid "New User?"
@@ -360,4 +359,7 @@ msgstr "管理员已被通知。对您造成的不便感到抱歉！"
 
 #~ msgid "said"
 #~ msgstr "说"
+
+#~ msgid "Unfollow"
+#~ msgstr "取消关注"
 
