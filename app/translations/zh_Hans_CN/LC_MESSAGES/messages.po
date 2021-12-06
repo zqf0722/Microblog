@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-12-05 18:14-0500\n"
+"POT-Creation-Date: 2021-12-05 20:33-0500\n"
 "PO-Revision-Date: 2021-11-13 01:54-0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: app/__init__.py:19
+#: app/__init__.py:21
 msgid "Please log in to access this page."
 msgstr "请登录后再访问这个页面"
 
@@ -178,6 +178,14 @@ msgstr "您的密码已重置"
 msgid "Send Message"
 msgstr "发送私信"
 
+#: app/main/routes.py:209
+msgid "An export task is currently in progress"
+msgstr "正在进行导出任务"
+
+#: app/main/routes.py:211
+msgid "Exporting posts..."
+msgstr "正在导出您的动态"
+
 #: app/templates/_post.html:16
 #, python-format
 msgid "%(username)s said %(when)s"
@@ -219,7 +227,7 @@ msgstr "个人档案"
 msgid "Logout"
 msgstr "登出"
 
-#: app/templates/base.html:93
+#: app/templates/base.html:105
 msgid "Error: Could not contact server."
 msgstr "错误：无法连接到服务器"
 
@@ -238,20 +246,20 @@ msgid "Log in to post your feelings and share with others!"
 msgstr "登录来说点什么和大家分享吧"
 
 #: app/templates/index.html:20 app/templates/messages.html:11
-#: app/templates/user.html:50
+#: app/templates/user.html:53
 msgid "Nothing here!"
 msgstr "这里空空如也！"
 
 #: app/templates/index.html:21 app/templates/messages.html:12
-#: app/templates/user.html:51
+#: app/templates/user.html:54
 msgid "Return to the main page"
 msgstr "返回主页"
 
-#: app/templates/index.html:28 app/templates/user.html:58
+#: app/templates/index.html:28 app/templates/user.html:61
 msgid "Newer posts"
 msgstr "更近的微博"
 
-#: app/templates/index.html:33 app/templates/user.html:63
+#: app/templates/index.html:33 app/templates/user.html:66
 msgid "Older posts"
 msgstr "更旧的微博"
 
@@ -302,15 +310,19 @@ msgstr "%(count)d 关注"
 msgid "Edit your profile"
 msgstr "修改您的个人档案"
 
-#: app/templates/user.html:22
+#: app/templates/user.html:19
+msgid "Export your posts"
+msgstr "导出您的动态"
+
+#: app/templates/user.html:25
 msgid "Follow"
 msgstr "关注"
 
-#: app/templates/user.html:29
+#: app/templates/user.html:32
 msgid "UnFollow"
 msgstr "取消关注"
 
-#: app/templates/user.html:37
+#: app/templates/user.html:40
 msgid "Send private message"
 msgstr "发送私信"
 
